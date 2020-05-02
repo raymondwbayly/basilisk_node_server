@@ -34,6 +34,33 @@ a {
 	color:#685E71
 }
 
+.installtitle {
+	font-family: Avenir;
+	font-weight: 600;
+	font-size: 24px;
+	color:#685E71
+}
+
+.aboutitle {
+	padding-top: 5px;
+	padding-left:20px;
+	padding-bottom: 5px;
+	font-family: Avenir;
+	font-weight: 600;
+	font-size: 24px;
+	color:#685E71
+}
+
+.aboutcontent {
+	padding-top: 5px;
+	padding-left:40px;
+	padding-bottom: 5px;
+	font-family: Avenir;
+	font-weight: 200;
+	font-size: 16px;
+	color:#685E71
+}
+
 .errortitle {
 	font-family:Avenir;
 	letter-spacing: 10px;

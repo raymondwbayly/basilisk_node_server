@@ -1,29 +1,23 @@
 {
-  "name": "basilisk-node-server",
-  "version": "0.0.1-alpha",
-  "description": "This is a Node Express Server built on JSON tables with Microservices architecture.",
-  "main": "server.js",
+  "name": "Beowulf-mse-server",
+  "version": "0.1.0-alpha",
+  "private": true,
   "scripts": {
-    "test": "test"
+    "start": "node ./index",
+    "test": "DEBUG=BeowulfMSEServer:* node ./index"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/raymondwbayly/basilisk_node_server.git"
-  },
-  "keywords": [
-    "Basilisk",
-    "NodeJS",
-    "Express",
-    "Microservices"
-  ],
-  "author": "Raymond Bayly",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/raymondwbayly/basilisk_node_server/issues"
-  },
-  "homepage": "https://github.com/raymondwbayly/basilisk_node_server#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "request": "^2.88.2"
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "ejs": "^3.0.2",
+    "lodash": "^4.17.15",
+    "mock-express-response": "^0.2.2"
   }
 }

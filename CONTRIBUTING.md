@@ -1,4 +1,4 @@
-# Contributing to Beowulf
+# Contributing to Beowulf MSe
 
 :+1::tada: First off, thanks for taking the time to contribute! :tada::+1:
 

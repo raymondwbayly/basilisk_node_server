@@ -1,0 +1,84 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title #{title}
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="apple-touch-icon", sizes="57x57", href="/favicons/apple-icon-57x57.png")
+    link(rel="apple-touch-icon", sizes="60x60", href="/favicons/apple-icon-60x60.png")
+    link(rel="apple-touch-icon", sizes="72x72", href="/favicons/apple-icon-72x72.png")
+    link(rel="apple-touch-icon", sizes="76x76", href="/favicons/apple-icon-76x76.png")
+    link(rel="apple-touch-icon", sizes="114x114", href="/favicons/apple-icon-114x114.png")
+    link(rel="apple-touch-icon", sizes="120x120", href="/favicons/apple-icon-120x120.png")
+    link(rel="apple-touch-icon", sizes="144x144", href="/favicons/apple-icon-144x144.png")
+    link(rel="apple-touch-icon", sizes="152x152", href="/favicons/apple-icon-152x152.png")
+    link(rel="apple-touch-icon", sizes="180x180", href="/favicons/apple-icon-180x180.png")
+    link(rel="icon", type="image/png", sizes="192x192",  href="/favicons/android-icon-192x192.png")
+    link(rel="icon", type="image/png", sizes="32x32", href="/favicons/favicon-32x32.png")
+    link(rel="icon", type="image/png", sizes="96x96", href="/favicons/favicon-96x96.png")
+    link(rel="icon", type="image/png", sizes="16x16", href="/favicons/favicon-16x16.png")
+    link(rel="manifest", href="/favicons/manifest.json")
+  body
+    table(width='100%', border='0', cellspacing='5', cellpadding='5')
+      tbody
+        tr
+          td
+            img(src='./images/bsb-2.png', width='1200', height='175', alt='#{title} - Banner')
+        tr
+          td
+            table(width='100%', border='0', cellspacing='20', cellpadding='20')
+              tbody
+                tr
+                  td
+                    span.title Welcome to the #{title}
+                    br
+                    br
+                    br
+                    .info
+                      br
+                      b Server Version:
+                      |  #{version}
+                      br
+                      b Code Name:
+                      |  Beowulf
+                      br
+                      b Developer:
+                      |  Raymond Bayly
+                    br
+                    br
+                    br
+                    .content
+                      table(width='60%', border='0', cellspacing='5', cellpadding='5')
+                        tbody
+                          tr
+                            td(colspan='3')
+                              p The Local application server is the backbone to the suite of prototype products for SiteHands X Application Sandbox Suite. This is a test system to ensure the language and processes are in place to be able to build out the next generation of SiteHands products. 
+                              p Leveraging the latest in language and methods by Google, Facebook and Amazon. For questions or a walk-through on the processes and systems used to build BeoWulf please contact
+                          tr
+                            td(colspan='3')
+                              span.installtitle Installation
+                              p The Beowulf server is used for local development and testing of the Beowulf software suite
+                          
+                          tr
+                            td  
+                            td  
+                            td  
+
+                            tr
+                              td
+        tr
+          td
+            img(src='./images/platform.jpg', width='1100', height='800', alt='Beowulf MSe Platform Ad')
+        tr
+          td
+            span.aboutitle About Beowulf Server
+        tr
+          td
+            span.aboutcontent This is the description of the beowulf platform server and what it is
+         tr
+          td
+            | .
+        tr
+          td
+            | .
+            .footer Beowulf MSe Server Developed by Raymond Bayly (2020)

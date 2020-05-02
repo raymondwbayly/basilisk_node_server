@@ -1,0 +1,106 @@
+body {
+	background-color: #000000;
+  	padding: 50px;
+  	font: 14px "Avenir";
+	color:#FFFFFF;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.title {
+	font-family: Avenir;
+	font-weight: 600;
+	font-size: 34px;
+	color:#685E71
+}
+
+.info {
+	padding-top: 5px;
+	padding-left:11px;
+	padding-bottom: 0px;
+	font-family: Avenir;
+	font-size: 14px;
+	color:#685E71
+}
+
+.content {
+	padding-top: 5px;
+	padding-left:15px;
+	padding-bottom: 5px;
+	font-family: Avenir;
+	font-size: 16px;
+	color:#685E71
+}
+
+.installtitle {
+	font-family: Avenir;
+	font-weight: 600;
+	font-size: 24px;
+	color:#685E71
+}
+
+.aboutitle {
+	padding-top: 5px;
+	padding-left:20px;
+	padding-bottom: 5px;
+	font-family: Avenir;
+	font-weight: 600;
+	font-size: 24px;
+	color:#685E71
+}
+
+.aboutcontent {
+	padding-top: 5px;
+	padding-left:40px;
+	padding-bottom: 5px;
+	font-family: Avenir;
+	font-weight: 200;
+	font-size: 16px;
+	color:#685E71
+}
+
+.errortitle {
+	font-family:Avenir;
+	letter-spacing: 10px;
+	font-size: 46px;
+	color: #961315
+}
+
+.errorcontent {
+	padding-left: 40px;
+	font-family:'Andale Mono';
+	letter-spacing: 1px;
+	line-height: 30px;
+    font-size: 12px;
+    color:#FCAD70
+}
+
+.errorstatus {
+	padding-left: 40px;
+	font-family: 'Andale Mono';
+	letter-spacing: 5px;
+	font-size: 12px;
+	color: #E0DCDC
+}
+
+.errorstack {
+    padding-left: 40px;
+	font-family:'Andale Mono';
+	letter-spacing: 1px;
+	line-height: 30px;
+    font-size: 12px;
+    color:#FCAD70
+}
+
+.footer {
+	text-align: center;
+	padding-top: 5px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom: 5px;
+	font-family: Avenir;
+	font-size: 11px;
+	color:#685E71
+}

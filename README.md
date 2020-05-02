@@ -1,7 +1,7 @@
 # Beowulf_Node_Server
-This is a Node JS Express server build on Micro services archit[![N|Solid](https://github.com/raymondwbayly/beowulf-assets/blob/master/img/src/Beowulf-server-banner.fw.png?raw=true)](#)
+[![N|Solid](https://github.com/raymondwbayly/beowulf-assets/blob/master/img/src/Beowulf-server-banner.fw.png?raw=true)](#)
 
-# Beowulf
+# Beowulf Msen (Micro Services Edition)
 
 ## NODE JS Express Server for Local Development
 

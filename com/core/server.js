@@ -5,7 +5,7 @@
  */
 
 var app = require('./app');
-var debug = require('debug')('basilisk-server:server');
+var debug = require('debug')('Beowulf-server:server');
 var http = require('http');
 
 /**

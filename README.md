@@ -1,18 +1,18 @@
-# Basilisk_Node_Server
-This is a Node JS Express server build on Micro services archit[![N|Solid](https://github.com/raymondwbayly/beowulf-assets/blob/master/img/src/basilisk-server-banner.fw.png?raw=true)](#)
+# Beowulf_Node_Server
+This is a Node JS Express server build on Micro services archit[![N|Solid](https://github.com/raymondwbayly/beowulf-assets/blob/master/img/src/Beowulf-server-banner.fw.png?raw=true)](#)
 
-# Basilisk
+# Beowulf
 
 ## NODE JS Express Server for Local Development
 
-Basilisk is a NODEJS development server built using Microservices architecture to allow delivery of data locally to test and develop flutter/dart application systems.
+Beowulf is a NODEJS development server built using Microservices architecture to allow delivery of data locally to test and develop flutter/dart application systems.
 
 
 ## Download the repository and install, once you have it installed download postman and set it up based on instructions below
 
 ---
 
-## Install and run Basilisk Server
+## Install and run Beowulf Server
 
 - Type some Markdown on the left
 - See HTML in the right

@@ -1,10 +1,10 @@
 {
-  "name": "basilisk-node-server",
+  "name": "Beowulf-mse-server",
   "version": "0.1.0-alpha",
   "private": true,
   "scripts": {
     "start": "node ./index",
-    "test": "DEBUG=basiliskServer:* node ./index"
+    "test": "DEBUG=BeowulfMSEServer:* node ./index"
   },
   "dependencies": {
     "body-parser": "^1.19.0",

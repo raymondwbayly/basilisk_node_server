@@ -1,4 +1,4 @@
-[![N|Solid](https://github.com/raymondwbayly/beowulf_mse_server/blob/master/lib/public/images/beowulf-mse-banner-2.jpg?raw=true?raw=true)](#)
+[![N|Solid](https://github.com/raymondwbayly/beowulf_mse_server/blob/master/lib/public/images/mse-banner.jpg?raw=true?raw=true?raw=true)](#)
 
 # Beowulf Msen (Micro Services Edition)
 

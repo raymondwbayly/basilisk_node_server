@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "3a669df7-d78e-4b2a-9c3a-c33728f73068",
+		"name": "Beowulf MSE",
+		"description": "This is the Beowulf Microservices Server. ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authorize",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "User Default",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/auth/user",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"user"
+									]
+								},
+								"description": "This is the user degault. "
+							},
+							"response": []
+						}
+					],
+					"description": "These are the user URI connections",
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Device",
+					"item": [
+						{
+							"name": "Device Default",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/auth/device",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"device"
+									]
+								},
+								"description": "This is the device default URI connections. "
+							},
+							"response": []
+						}
+					],
+					"description": "These are the Device URI connections. ",
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Auth Default",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/auth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth"
+							]
+						},
+						"description": "This is the auth default, this is a bookmarked view for later. "
+					},
+					"response": []
+				}
+			],
+			"description": "This is the calls that Authorize the devices on the system",
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Main View",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				},
+				"description": "The server offers a view views, both to introduce the development enviroment and to test the server is working. "
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

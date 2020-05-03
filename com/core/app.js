@@ -4,16 +4,17 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
+const loggingMW = require('./middleware/logging')
 
 
 // Setting up the router calls from the services
-var indexView = require('../../lib/views/index/index.route');
+var indexView = require('./views/index/index.route');
 
 
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, '../../lib/views'));
+app.set('views', path.join(__dirname, './views'));
 app.set('view engine', 'jade');
 
 //Body Parsing
@@ -21,6 +22,11 @@ app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(logger('dev'));
+app.use( (req, res, next) => {
+  console.log(req.originalUrl);
+  loggingMW.logRequest(req.originalUrl);
+  next();
+});
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());

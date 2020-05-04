@@ -15,8 +15,17 @@ const searchUsers = (value) => {
     return db.searchTable('users', value);
 }
 
-const addUser = () => {
-    return [];
+const addUser = (usr) => {
+    newUser.setID(db.getNextID('users'));
+    newUser.setFirstname(usr.firstname);
+    newUser.setLastName(usr.lastname);
+    newUser.setEmail(usr.email);
+    newUser.setPassword(usr.password);
+    newUser.setPhone(usr.phone);
+    newUser.setMobile(usr.mobile);
+    newUser.setProfilePic(usr.profilepic);
+    newUser.setActive(usr.active);
+    return db.addToTable('users', newUser.getJSON());
 }
 
 const updateUser = () => {

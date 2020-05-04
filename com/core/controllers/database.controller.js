@@ -17,7 +17,10 @@ const searchTable = (table, value) => {
 
 const addToTable = (table, value) => {
     var tableData = tables.getData(table).table;
-    return [];
+    var newTable = tableData.push(value);
+    var path = tables.getData(table).path;
+    writeToTable(newTable, path);
+    return value;
 }
 
 const updateTable = (table, value) => {
@@ -33,6 +36,13 @@ const activeFlag = (table, value) => {
 const deleteFromTable = (table, value) => {
     var tableData = tables.getData(table).table;
     return [];
+}
+
+const getNextID = (table) => {
+    var records = tables.getData(table).table;
+    var tmpInd = records.length;
+    tmpInd = tmpInd + 1;
+    return tmpInd;
 }
 
 
@@ -72,3 +82,5 @@ const writeToTable = (records,path) => {
 
 exports.listTable = listTable;
 exports.searchTable = searchTable;
+exports.getNextID = getNextID;
+exports.addToTable = addToTable;

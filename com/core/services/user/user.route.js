@@ -19,7 +19,7 @@ router.get('/search/:uid', function(req, res) {
 
 /* POST Create User. */
 router.post('/', function(req, res) {
-  res.send('create');
+  res.send(responseObj.buildResponse('Users', 'User added to the server ', userService.addUser(req.body)));
 });
 
 /* PUT Update User. */

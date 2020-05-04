@@ -8,8 +8,17 @@ const loggingMW = require('./middleware/logging')
 
 
 // Setting up the router calls from the services
+// ***********************************************************************
+
+// View Imports
 var indexView = require('./views/index/index.route');
 
+// Services Imports
+var authService = require('./services/auth/auth.route');
+
+
+
+// ***********************************************************************
 
 var app = express();
 
@@ -34,9 +43,17 @@ app.use(express.static(path.join(__dirname, '../../lib/public')));
 
 
 // Set the router to the path
+// ***********************************************************************
 
+// Path Registration ------------------------
 app.use('/', indexView);
 
+// Service Registration ----------------------
+app.use('/auth', authService);
+
+
+
+// ***********************************************************************
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

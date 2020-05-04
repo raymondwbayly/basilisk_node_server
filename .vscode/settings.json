@@ -5,6 +5,10 @@
         "errorstack",
         "errorstatus",
         "errortitle",
-        "microservices"
+        "installdoc",
+        "microservices",
+        "readmedoc",
+        "releasedoc",
+        "versiondoc"
     ]
 }

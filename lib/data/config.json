@@ -1,0 +1,15 @@
+{
+    "name":"Beowulf MSE",
+    "codename":"Grendel",
+    "developer":"Raymond Bayly",
+    "company":"sitehands",
+    "description":"MicroService data delivery system for the beowulf proof of concept applications",
+    "version":"0.1.0-alpha",
+    "host":"http://127.0.0.1",
+    "port":"3000",
+    "git":"https://github.com/raymondwbayly/beowulf_mse_server",
+    "readmedoc":"https://github.com/raymondwbayly/beowulf_mse_server/blob/master/README.md",
+    "installdoc":"https://github.com/raymondwbayly/beowulf_mse_server/blob/master/INSTALLATION.md",
+    "versiondoc":"https://github.com/raymondwbayly/beowulf_mse_server/blob/master/VERSION.md",
+     "releasedoc":"https://github.com/raymondwbayly/beowulf_mse_server/blob/master/RELEASE.md"
+}

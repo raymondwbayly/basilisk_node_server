@@ -89,6 +89,9 @@ Once the server is installed, open a terminal window and to go the folder where 
 | URI                           | CALL   | RETURN    |  NOTES                        |
 | ------                        | ------ | ------    | ------                        |
 |```/```                        |  GET   | HTML PAGE | Server Information Page       |
+|```/auth```                    |  GET   | JSON      | Default page for auth         |
+|```/auth/user``                |  POST   | JSON     | Set cookie for User           |
+|```/auth/device``              |  POST   | JSON     | Set cookie for Device         |
 
 ---
 

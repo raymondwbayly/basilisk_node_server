@@ -1,14 +1,11 @@
 // This is the user service
 
+var db = require('../../controllers/database.controller');
 
-const verifyUserToken = (token) => {
-    return true;
-}
-
-const verifyDeviceToken = (token) => {
-    return true;
+const listUsers = () => {
+    return db.list('users');
 }
 
 
-exports.verifyUserToken = verifyUserToken;
-exports.verifyDeviceToken = verifyDeviceToken;
+
+exports.listUsers = listUsers;

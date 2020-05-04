@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
+// TODO Add the Middle Ware Route Authorization to the user service
+
 var userService = require('./user.service');
 var responseObj = require('../../controllers/response.controller');
 

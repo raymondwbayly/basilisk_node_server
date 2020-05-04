@@ -6,9 +6,35 @@ var router = express.Router();
 var userService = require('./user.service');
 var responseObj = require('../../controllers/response.controller');
 
-/* GET User listing. */
+/* GET List Users. */
 router.get('/', function(req, res) {
-  res.send(responseObj.buildResponse('Users', 'This is the default URI for the User Service'));
+  res.send(responseObj.buildResponse('Users', 'This Service Lists Users from the data tables', userService.listUsers()));
+});
+
+/* GET Search Users. */
+router.get('/search/:uid', function(req, res) {
+  //req.params.uid
+  res.send(responseObj.buildResponse('Users', 'Search Results from Searching Last Name for ' + req.params.uid, userService.searchUsers(req.params.uid)));
+});
+
+/* POST Create User. */
+router.post('/', function(req, res) {
+  res.send('create');
+});
+
+/* PUT Update User. */
+router.put('/', function(req, res) {
+  res.send('create');
+});
+
+/* DELETE Update User. */
+router.delete('/:uid', function(req, res) {
+  res.send('create');
+});
+
+/* PUT Update Active Flag. */
+router.get('/active/:uid', function(req, res) {
+  res.send('update active');
 });
 
 module.exports = router;

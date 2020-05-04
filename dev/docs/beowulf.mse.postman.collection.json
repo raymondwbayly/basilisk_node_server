@@ -32,6 +32,50 @@
 								"description": "This is the user degault. "
 							},
 							"response": []
+						},
+						{
+							"name": "Authorize User",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "user",
+											"value": "jdoe",
+											"description": "This is the username",
+											"type": "text"
+										},
+										{
+											"key": "pass",
+											"value": "skippy",
+											"description": "User Pass",
+											"type": "text"
+										},
+										{
+											"key": "token",
+											"value": "hhfjkjgir4583",
+											"description": "Passed token",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/user",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"user"
+									]
+								},
+								"description": "This sets the cookie for authorizing users. "
+							},
+							"response": []
 						}
 					],
 					"description": "These are the user URI connections",
@@ -59,6 +103,50 @@
 									]
 								},
 								"description": "This is the device default URI connections. "
+							},
+							"response": []
+						},
+						{
+							"name": "Authorize Device",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "id",
+											"value": "1",
+											"description": "This is the device ID",
+											"type": "text"
+										},
+										{
+											"key": "secret",
+											"value": "skippy",
+											"description": "This is the secret",
+											"type": "text"
+										},
+										{
+											"key": "token",
+											"value": "hhfjr4979wqe729",
+											"description": "This is the device token",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/device",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"device"
+									]
+								},
+								"description": "This allows you to authorize the device. "
 							},
 							"response": []
 						}

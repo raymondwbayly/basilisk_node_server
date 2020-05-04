@@ -15,4 +15,15 @@ const getConfig = () => {
     return ServerCfg;
 }
 
+const getServerInfo = () => {
+
+    return {'server': ServerCfg.getName(),'version': ServerCfg.getVersion(), 'codename': ServerCfg.getCodeName(), 'host':ServerCfg.getHost(), 'port':ServerCfg.getPort()};
+}
+
+const getVersion = () => {
+    return ServerCfg.getVersion();
+}
+
 exports.getConfig = getConfig;
+exports.getVersion = getVersion;
+exports.getServerInfo = getServerInfo;

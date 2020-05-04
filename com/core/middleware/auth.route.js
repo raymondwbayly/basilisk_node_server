@@ -1,13 +1,16 @@
-var express = require('express');
+var app = require("express")();
+//This is the middleware function which will be called before any routes get hit which are defined after this point, i.e. in your index.js
+app.use(function (req, res, next) {
+    const appToken = req.cookies['app-token'];
+    const userToken = req.cookies['user-token'];
 
-function isAuthenticated(req, res, next) {
-  // do any checks you want to in here
+  //Unsure how you're actually checking this, so some psuedo code below
+  if (appToken && userToken) {
+    next();
+  }
+  else {
+    return res.status(403).send("Unauthorised!");
+  }
+});
 
-  // CHECK THE USER STORED IN SESSION FOR A CUSTOM VARIABLE
-  // you can do this however you want with whatever variables you set up
-  if (req.user.authenticated)
-      return next();
-
-  // IF A USER ISN'T LOGGED IN, THEN REDIRECT THEM SOMEWHERE
-  res.redirect('/');
-}
+//Define/include your controllers

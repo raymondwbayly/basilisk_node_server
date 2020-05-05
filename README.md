@@ -98,6 +98,18 @@ Once the server is installed, open a terminal window and to go the folder where 
 |```/users```             |  PUT   | JSON     | Updates User        |
 |```/users/{id}```             |  DELETE   | JSON     | Deletes user        |
 |```/users/active/{id}```             |  GET   | JSON     | Turns on or off User active flag        |
+|```/categories```             |  GET   | JSON     | Lists Categories on the server        |
+|```/categories/search/{title}```             |  GET   | JSON     | Searches Cats on name       |
+|```/categories```             |  POST   | JSON     | Adds Categories to the server        |
+|```/categories```             |  PUT   | JSON     | Updates Categories on the server       |
+|```/categories/{id}```             |  DELETE   | JSON     | Removes Category from Server        |
+|```/categories/active/{id}```             |  GET   | JSON     | Changes Active Flag        |
+|```/articles```             |  GET   | JSON     | Lists Categories on the server        |
+|```/articles/search/{title}```             |  GET   | JSON     | Searches Cats on name       |
+|```/articles```             |  POST   | JSON     | Adds Categories to the server        |
+|```/articles```             |  PUT   | JSON     | Updates Categories on the server       |
+|```/articles/{id}```             |  DELETE   | JSON     | Removes Category from Server        |
+|```/articles/active/{id}```             |  GET   | JSON     | Changes Active Flag        |
 
 ---
 

@@ -1,6 +1,6 @@
 // This is the index file that loads the others for the service
-const categoryRoutes = require('./category.route')
-const categoryService = require('./category.service');
+const routes = require('./category.route')
+const service = require('./category.service');
 
-exports.categoryRoutes = categoryRoutes;
-exports.categoryService = categoryService;
+exports.routes = routes;
+exports.service = service;

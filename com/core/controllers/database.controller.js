@@ -74,6 +74,14 @@ const searchRecords = (table, records, value) => {
             }
         }
     }
+
+    if(table === 'articles'){
+        for(let r of records) {
+            if(r.title.toUpperCase() === value.toUpperCase() ) {
+                tmpSearched.push(r);
+            }
+        }
+    }
     return tmpSearched;
 }
 

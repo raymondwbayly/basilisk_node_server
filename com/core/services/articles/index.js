@@ -1,6 +1,6 @@
 // This is the index file that loads the others for the service
-const articleRoutes = require('./article.route')
-const articleService = require('./article.service');
+const routes = require('./article.route')
+const service = require('./article.service');
 
-exports.articleRoutes = articleRoutes;
-exports.articleService = articleService;
+exports.routes = routes;
+exports.service = service;

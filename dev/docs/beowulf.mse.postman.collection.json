@@ -584,6 +584,213 @@
 			"protocolProfileBehavior": {}
 		},
 		{
+			"name": "Article Requests",
+			"item": [
+				{
+					"name": "List Articles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/articles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"articles"
+							]
+						},
+						"description": "This lists the articles on the server"
+					},
+					"response": []
+				},
+				{
+					"name": "Search Articles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/articles/search/Company has great first quarter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"articles",
+								"search",
+								"Company has great first quarter"
+							]
+						},
+						"description": "This is the search article"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Article",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Bob Jones Promoted to CIO",
+									"type": "text"
+								},
+								{
+									"key": "created",
+									"value": "04/12/2020",
+									"type": "text"
+								},
+								{
+									"key": "author",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "story",
+									"value": "This is the story for the article  this is what is displayed with the body. ",
+									"type": "text"
+								},
+								{
+									"key": "active",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/articles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"articles"
+							]
+						},
+						"description": "This adds a new article on the server"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Article",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Joe is now the new CEO of the company",
+									"type": "text"
+								},
+								{
+									"key": "created",
+									"value": "04.22.2020",
+									"type": "text"
+								},
+								{
+									"key": "author",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "story",
+									"value": "This is the story body and it is what is updated and shown when the story details are displayed",
+									"type": "text"
+								},
+								{
+									"key": "active",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/articles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"articles"
+							]
+						},
+						"description": "Updates an article on the server"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Article",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/articles/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"articles",
+								"2"
+							]
+						},
+						"description": "This is the request to delete an article, this is not active "
+					},
+					"response": []
+				},
+				{
+					"name": "Set Article Active",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/articles/active/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"articles",
+								"active",
+								"2"
+							]
+						},
+						"description": "This sets the article active/inactive"
+					},
+					"response": []
+				}
+			],
+			"description": "This is the article requests. ",
+			"protocolProfileBehavior": {}
+		},
+		{
 			"name": "Main View",
 			"request": {
 				"method": "GET",

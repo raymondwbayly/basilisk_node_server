@@ -1,77 +1,71 @@
-// This is the user service
+// This is the Article service
 
 var db = require('../../controllers/database.controller');
-var User = require('../../../../lib/core/models/User');
+var Article = require('../../../../lib/core/models/Article');
 
-const listUsers = () => {
-    return db.listTable('users');
+const listArticles = () => {
+    return db.listTable('articles');
 }
 
-const searchUsers = (value) => {
-    return db.searchTable('users', value);
+const searchArticles = (value) => {
+    return db.searchTable('articles', value);
 }
 
-const addUser = (usr) => {
-    var newUser = new User;
-    newUser.setID(db.getNextID('users'));
-    newUser.setFirstname(usr.firstname);
-    newUser.setLastName(usr.lastname);
-    newUser.setEmail(usr.email);
-    newUser.setPassword(usr.password);
-    newUser.setPhone(usr.phone);
-    newUser.setMobile(usr.mobile);
-    newUser.setProfilePic(usr.profilepic);
-    newUser.setActive(usr.active);
-    return db.addToTable('users', newUser.getJSON());
+const addArticle = (article) => {
+    var nArticle = new Article;
+    nArticle.setID(db.getNextID('articles'));
+    nArticle.setTitle(article.title);
+    nArticle.setCreated(article.created);
+    nArticle.setAuthor(article.author);
+    nArticle.setCategory(article.category);
+    nArticle.setStory(article.story);
+    nArticle.setActive(article.active);
+    return db.addToTable('articles', nArticle.getJSON());
 }
 
-const updateUser = (usr) => {
-    var newUser = new User;
-    var UserRecords = db.listTable('users');
-    var tmpInd = db.findRecordIndex(UserRecords, usr.id.toString());
-    newUser.setID(usr.id);
-    newUser.setFirstname(usr.firstname);
-    newUser.setLastName(usr.lastname);
-    newUser.setEmail(usr.email);
-    newUser.setPassword(usr.password);
-    newUser.setPhone(usr.phone);
-    newUser.setMobile(usr.mobile);
-    newUser.setProfilePic(usr.profilepic);
-    newUser.setActive(usr.active);
-    UserRecords[tmpInd].firstname = newUser.getFirstName();
-    UserRecords[tmpInd].lastname = newUser.getLastName();
-    UserRecords[tmpInd].email = newUser.getEmail();
-    UserRecords[tmpInd].password = newUser.getPassword();
-    UserRecords[tmpInd].phone = newUser.getPhone();
-    UserRecords[tmpInd].mobile = newUser.getMobile();
-    UserRecords[tmpInd].profilepic = newUser.getProfilePic();
-    UserRecords[tmpInd].active = newUser.getActive();
-    db.updateTable('users', UserRecords);
-    return newUser.getJSON();
+const updateArticle = (article) => {
+    var nArticle = new Article;
+    var ArticleRecords = db.listTable('articles');
+    var tmpInd = db.findRecordIndex(ArticleRecords, article.id.toString());
+    nArticle.setID(article.id);
+    nArticle.setTitle(article.title);
+    nArticle.setCreated(article.created);
+    nArticle.setAuthor(article.author);
+    nArticle.setCategory(article.category);
+    nArticle.setStory(article.story);
+    nArticle.setActive(article.active);
+    ArticleRecords[tmpInd].title = nArticle.getTitle();
+    ArticleRecords[tmpInd].created = nArticle.getCreated();
+    ArticleRecords[tmpInd].author = nArticle.getAuthor();
+    ArticleRecords[tmpInd].category = nArticle.getCategory();
+    ArticleRecords[tmpInd].story = nArticle.getStory();
+    ArticleRecords[tmpInd].active = nArticle.getActive();
+    db.updateTable('articles', ArticleRecords);
+    return nArticle.getJSON();
 }
 
 const setActive = (id) => {
-    var UserRecords = db.listTable('users');
-    var tmpInd = db.findRecordIndex(UserRecords, id);
-    if(UserRecords[tmpInd].active === 'true'){
-        UserRecords[tmpInd].active = 'false'
+    var ArticleRecords = db.listTable('articles');
+    var tmpInd = db.findRecordIndex(ArticleRecords, id);
+    if(ArticleRecords[tmpInd].active === 'true'){
+        ArticleRecords[tmpInd].active = 'false'
     } else {
-        UserRecords[tmpInd].active = 'true'
+        ArticleRecords[tmpInd].active = 'true'
     }
-    db.updateTable('users', UserRecords);
+    db.updateTable('articles', ArticleRecords);
     return [{"id":id}];
 }
 
-// TODO update the User service to delete a record
-const deleteUser = (id) => {
+// TODO update the service to delete a record
+const deleteArticle = (id) => {
     return [];
 }
 
 
 
-exports.listUsers = listUsers;
-exports.searchUsers = searchUsers;
-exports.addUser = addUser;
-exports.updateUser = updateUser;
+exports.listArticles = listArticles;
+exports.searchArticles = searchArticles;
+exports.addArticle = addArticle;
+exports.updateArticle = updateArticle;
 exports.setActive = setActive;
-exports.deleteUser = deleteUser;
+exports.deleteArticle = deleteArticle;

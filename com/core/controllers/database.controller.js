@@ -82,6 +82,15 @@ const searchRecords = (table, records, value) => {
             }
         }
     }
+
+    if(table === 'tasks'){
+        for(let r of records) {
+            if(r.name.toUpperCase() === value.toUpperCase() ) {
+                tmpSearched.push(r);
+            }
+        }
+    }
+
     return tmpSearched;
 }
 

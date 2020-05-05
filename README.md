@@ -110,6 +110,12 @@ Once the server is installed, open a terminal window and to go the folder where 
 |```/articles```             |  PUT   | JSON     | Updates Categories on the server       |
 |```/articles/{id}```             |  DELETE   | JSON     | Removes Category from Server        |
 |```/articles/active/{id}```             |  GET   | JSON     | Changes Active Flag        |
+|```/tasks```             |  GET   | JSON     | Lists tasks on the server        |
+|```/tasks/search/{title}```             |  GET   | JSON     | Searches tasks on name       |
+|```/tasks```             |  POST   | JSON     | Adds tasks to the server        |
+|```/tasks```             |  PUT   | JSON     | Updates tasks on the server       |
+|```/tasks/{id}```             |  DELETE   | JSON     | Removes tasks from Server        |
+|```/tasks/active/{id}```             |  GET   | JSON     | Changes Active Flag        |
 
 ---
 

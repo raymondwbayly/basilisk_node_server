@@ -10,3 +10,4 @@ These are the release notes, this will detail the changes to the system by ticke
 | feature/5  |  ```/user```  | Added the models, controllers and calls to manage users          | Ray Bayly                         |
 | feature/12  |  ```/categories```  | Added the models, controllers and calls to manage Categories          | Ray Bayly                         |
 | feature/12  |  ```/articles```  | Added the models, controllers and calls to manage Articles          | Ray Bayly                         |
+| feature/13  |  ```/tasks```  | Added the models, controllers and calls to manage Tasks          | Ray Bayly                         |

@@ -19,6 +19,7 @@ var auth = require('./services/auth/index');
 var user = require('./services/user/index');
 var category = require('./services/categories/index');
 var articles = require('./services/articles/index');
+var tasks = require('./services/task/index');
 
 
 
@@ -57,7 +58,7 @@ app.use('/auth', auth.routes);
 app.use('/users', user.routes);
 app.use('/category', category.routes);
 app.use('/articles', articles.routes);
-
+app.use('/tasks', tasks.routes);
 
 
 // ***********************************************************************

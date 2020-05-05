@@ -5,10 +5,14 @@
         "errorstack",
         "errorstatus",
         "errortitle",
+        "firstname",
         "installdoc",
+        "lastname",
         "microservices",
+        "profilepic",
         "readmedoc",
         "releasedoc",
+        "skillp",
         "versiondoc"
     ]
 }

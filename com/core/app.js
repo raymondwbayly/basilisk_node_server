@@ -15,6 +15,7 @@ var indexView = require('./views/index/index.route');
 
 // Services Imports
 var authService = require('./services/auth/auth.route');
+var userService = require('./services/user/user.route');
 
 
 
@@ -50,6 +51,7 @@ app.use('/', indexView);
 
 // Service Registration ----------------------
 app.use('/auth', authService);
+app.use('/users', userService);
 
 
 

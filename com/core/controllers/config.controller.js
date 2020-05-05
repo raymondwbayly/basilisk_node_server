@@ -5,7 +5,7 @@ var lodash = require('lodash');
 var Configuration = require('../../../lib/core/models/Configuration');
 
 // Alerts JSON
-var configPath = path.join(__dirname, '../../../lib/data', 'config.json');
+var configPath = path.join(__dirname, '../../../lib/core/config', 'config.json');
 var cfgJSON =  require(configPath);
 
 var ServerCfg = new Configuration(cfgJSON);

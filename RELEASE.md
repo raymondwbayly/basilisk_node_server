@@ -7,3 +7,4 @@ These are the release notes, this will detail the changes to the system by ticke
 | TICKET     | URI           | DESCRIPTION                                                   |  DEVELOPER                        |
 | ------     | ------        | ------                                                        | ------                            |
 | feature/4  |  ```/auth```  | Added the Models for the Response and Configuration           | Ray Bayly                         |
+| feature/5  |  ```/user```  | Added the models, controllers and calls to manage users          | Ray Bayly                         |

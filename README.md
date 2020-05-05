@@ -90,8 +90,14 @@ Once the server is installed, open a terminal window and to go the folder where 
 | ------                        | ------ | ------    | ------                        |
 |```/```                        |  GET   | HTML PAGE | Server Information Page       |
 |```/auth```                    |  GET   | JSON      | Default page for auth         |
-|```/auth/user``                |  POST   | JSON     | Set cookie for User           |
-|```/auth/device``              |  POST   | JSON     | Set cookie for Device         |
+|```/auth/user```                |  POST   | JSON     | Set cookie for User          |
+|```/auth/device```              |  POST   | JSON     | Set cookie for Device        |
+|```/users```             |  GET   | JSON     | Lists Users from the users table         |
+|```/users/search/{lastname}```             |  GET   | JSON     | Returns all users with lastname specified         |
+|```/users```             |  POST   | JSON     | Adds User        |
+|```/users```             |  PUT   | JSON     | Updates User        |
+|```/users/{id}```             |  DELETE   | JSON     | Deletes user        |
+|```/users/active/{id}```             |  GET   | JSON     | Turns on or off User active flag        |
 
 ---
 

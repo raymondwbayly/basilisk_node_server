@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "title": "John Smith Promoted to the CIO of the Company",
+    "created": "04.01.2020",
+    "author": "4",
+    "category": "3",
+    "story": "This is the story for the article this will display in the body of the story.",
+    "active": "true"
+  },
+  {
+    "id": "2",
+    "title": "Company opens new location in New Jersey",
+    "created": "04.01.2020",
+    "author": "4",
+    "category": "1",
+    "story": "This is the story for the article this will display in the body of the story.",
+    "active": "true"
+  },
+  {
+    "id": "3",
+    "title": "Company has great first quarter",
+    "created": "04.01.2020",
+    "author": "4",
+    "category": "3",
+    "story": "This is the story for the article this will display in the body of the story.",
+    "active": "true"
+  }
+]

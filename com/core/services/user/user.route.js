@@ -24,17 +24,17 @@ router.post('/', function(req, res) {
 
 /* PUT Update User. */
 router.put('/', function(req, res) {
-  res.send('create');
+  res.send(responseObj.buildResponse('Users', 'User ' + req.body.firstname + ' ' + req.body.lastname + ' Updated on the server', userService.updateUser(req.body)));
 });
 
 /* DELETE Update User. */
 router.delete('/:uid', function(req, res) {
-  res.send('create');
+  res.send(responseObj.buildResponse('Users', 'Delete is disabled on this version', userService.deleteUser(req.params.uid)));
 });
 
 /* PUT Update Active Flag. */
 router.get('/active/:uid', function(req, res) {
-  res.send('update active');
+  res.send(responseObj.buildResponse('Users', 'User Active Flag has been set ', userService.setActive(req.params.uid)));
 });
 
 module.exports = router;

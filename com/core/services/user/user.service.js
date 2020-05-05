@@ -3,10 +3,6 @@
 var db = require('../../controllers/database.controller');
 var User = require('../../../../lib/core/models/User');
 
-
-
-var newUser = new User;
-
 const listUsers = () => {
     return db.listTable('users');
 }
@@ -16,6 +12,7 @@ const searchUsers = (value) => {
 }
 
 const addUser = (usr) => {
+    var newUser = new User;
     newUser.setID(db.getNextID('users'));
     newUser.setFirstname(usr.firstname);
     newUser.setLastName(usr.lastname);
@@ -28,15 +25,45 @@ const addUser = (usr) => {
     return db.addToTable('users', newUser.getJSON());
 }
 
-const updateUser = () => {
-    return [];
+const updateUser = (usr) => {
+    var newUser = new User;
+    var UserRecords = db.listTable('users');
+    var tmpInd = db.findRecordIndex(UserRecords, usr.id.toString());
+    newUser.setID(usr.id);
+    newUser.setFirstname(usr.firstname);
+    newUser.setLastName(usr.lastname);
+    newUser.setEmail(usr.email);
+    newUser.setPassword(usr.password);
+    newUser.setPhone(usr.phone);
+    newUser.setMobile(usr.mobile);
+    newUser.setProfilePic(usr.profilepic);
+    newUser.setActive(usr.active);
+    UserRecords[tmpInd].firstname = newUser.getFirstName();
+    UserRecords[tmpInd].lastname = newUser.getLastName();
+    UserRecords[tmpInd].email = newUser.getEmail();
+    UserRecords[tmpInd].password = newUser.getPassword();
+    UserRecords[tmpInd].phone = newUser.getPhone();
+    UserRecords[tmpInd].mobile = newUser.getMobile();
+    UserRecords[tmpInd].profilepic = newUser.getProfilePic();
+    UserRecords[tmpInd].active = newUser.getActive();
+    db.updateTable('users', UserRecords);
+    return newUser.getJSON();
 }
 
-const setActive = () => {
-    return [];
+const setActive = (id) => {
+    var UserRecords = db.listTable('users');
+    var tmpInd = db.findRecordIndex(UserRecords, id);
+    if(UserRecords[tmpInd].active === 'true'){
+        UserRecords[tmpInd].active = 'false'
+    } else {
+        UserRecords[tmpInd].active = 'true'
+    }
+    db.updateTable('users', UserRecords);
+    return [{"id":id}];
 }
 
-const deleteUser = () => {
+// TODO update the User service to delete a record
+const deleteUser = (id) => {
     return [];
 }
 

@@ -17,15 +17,16 @@ const searchTable = (table, value) => {
 
 const addToTable = (table, value) => {
     var tableData = tables.getData(table).table;
-    var newTable = tableData.push(value);
+    tableData.push(value);
     var path = tables.getData(table).path;
-    writeToTable(newTable, path);
+    writeToTable(tableData, path);
     return value;
 }
 
 const updateTable = (table, value) => {
-    var tableData = tables.getData(table).table;
-    return [];
+    var path = tables.getData(table).path;
+    writeToTable(value, path);
+    return true;
 }
 
 const activeFlag = (table, value) => {
@@ -84,3 +85,5 @@ exports.listTable = listTable;
 exports.searchTable = searchTable;
 exports.getNextID = getNextID;
 exports.addToTable = addToTable;
+exports.updateTable = updateTable;
+exports.findRecordIndex = findRecordIndex;

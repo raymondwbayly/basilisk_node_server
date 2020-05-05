@@ -11,7 +11,7 @@ const loggingMW = require('./middleware/logging')
 // ***********************************************************************
 
 // View Imports
-var indexView = require('./views/index/index.route');
+var indexview = require('./views/index/index');
 
 
 // Services
@@ -50,7 +50,7 @@ app.use(express.static(path.join(__dirname, '../../lib/public')));
 // ***********************************************************************
 
 // Path Registration ------------------------
-app.use('/', indexView);
+app.use('/', indexview.routes);
 
 // Service Registration ----------------------
 app.use('/auth', auth.routes);

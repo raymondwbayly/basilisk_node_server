@@ -1,6 +1,7 @@
 {
     "name":"Beowulf MSE",
     "codename":"Grendel",
+    "build": "13",
     "developer":"Raymond Bayly",
     "company":"sitehands",
     "description":"MicroService data delivery system for the beowulf proof of concept applications",

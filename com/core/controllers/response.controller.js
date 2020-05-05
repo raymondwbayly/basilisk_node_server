@@ -13,6 +13,7 @@ const buildResponse = (service, message, data) => {
     let c = cfgController.getServerInfo();
     nResponse.setService(service);
     nResponse.setCodeName(c.codename);
+    nResponse.setBuild(c.build);
     nResponse.setVersion(c.version);
     nResponse.setServer(c.server);
     nResponse.setMessage(message);

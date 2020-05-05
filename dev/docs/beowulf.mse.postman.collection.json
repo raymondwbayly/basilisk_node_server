@@ -791,6 +791,209 @@
 			"protocolProfileBehavior": {}
 		},
 		{
+			"name": "Task Request",
+			"item": [
+				{
+					"name": "List Tasks",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Setup the Data Tables",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "This is the task for setting up the data tables",
+									"type": "text"
+								},
+								{
+									"key": "active",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks"
+							]
+						},
+						"description": "Lists the tasks on the system"
+					},
+					"response": []
+				},
+				{
+					"name": "Search tasks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tasks/search/Set up the Database Server",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"search",
+								"Set up the Database Server"
+							]
+						},
+						"description": "This searches the task based on the name"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Task",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Build out the Support Area of the Mobile App",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "This is building out the mobile application support system, this will be written in dart.Flutter",
+									"type": "text"
+								},
+								{
+									"key": "active",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks"
+							]
+						},
+						"description": "This creates a task on the system"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Task",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Work on the Support Application",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Working through the support application to ensure it works",
+									"type": "text"
+								},
+								{
+									"key": "active",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks"
+							]
+						},
+						"description": "Updating the task "
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Task",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tasks/active/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"active",
+								"2"
+							]
+						},
+						"description": "This removes the task on the system"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Active",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tasks/active/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"active",
+								"2"
+							]
+						},
+						"description": "This updates the active task"
+					},
+					"response": []
+				}
+			],
+			"description": "This is the task requests. ",
+			"protocolProfileBehavior": {}
+		},
+		{
 			"name": "Main View",
 			"request": {
 				"method": "GET",

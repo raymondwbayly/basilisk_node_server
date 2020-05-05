@@ -17,7 +17,7 @@ const getConfig = () => {
 
 const getServerInfo = () => {
 
-    return {'server': ServerCfg.getName(),'version': ServerCfg.getVersion(), 'codename': ServerCfg.getCodeName(), 'host':ServerCfg.getHost(), 'port':ServerCfg.getPort()};
+    return {'server': ServerCfg.getName(),'version': ServerCfg.getVersion(), 'codename': ServerCfg.getCodeName(), 'build': ServerCfg.getBuild() , 'host':ServerCfg.getHost(), 'port':ServerCfg.getPort()};
 }
 
 const getVersion = () => {

@@ -2,16 +2,16 @@
 
 var db = require('../../controllers/database.controller');
 var Task = require('../../../../lib/core/models/Task');
-var mod = require('./index');
+var core = require('./index');
 
 
 const list = () => {
-    return mod.data;
+    return core.getData();
 }
 
 const get = (uid) => {
-    let ind =  mod.data.findIndex(x => x.id === uid);
-    return mod.data[ind];
+    let ind =  core.getData().findIndex(x => x.id === uid);
+    return core.getData()[ind];
 }
 
 const search = (value) => {
@@ -34,22 +34,6 @@ const active = (uid) => {
     return [];
 }
 
-const getTitle = () => {
-    return mod.getTitle();
-}
-
-const getCategory = () => {
-    return mod.getCategory();
-}
-
-const getURI = () => {
-    return mod.getURI();
-}
-
-const getPath = () => {
-    return mod.getPath();
-}
-
 
 
 exports.list = list;
@@ -58,7 +42,3 @@ exports.search = search;
 exports.add = add;
 exports.update = update;
 exports.remove = remove;
-exports.getTitle = getTitle;
-exports.getCategory = getCategory;
-exports.getURI = getURI;
-exports.getPath = getPath;

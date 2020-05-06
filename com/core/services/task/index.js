@@ -28,11 +28,31 @@ const getPath = () => {
     return settings.path;
 }
 
+const getData = () => {
+    return data;
+}
+
+const getModel = () => {
+    return model;
+}
+
+const getService = () => {
+    return service;
+}
+
+const getRoutes = () => {
+    return routes;
+}
+
+
+
+
+
 exports.getTitle = getTitle;
 exports.getCategory = getCategory;
 exports.getURI = getURI;
 exports.getPath = getPath;
-exports.routes = routes;
-exports.service = service;
-exports.model = model;
-exports.data = data;
+exports.getRoutes = getRoutes;
+exports.getService = getService;
+exports.getModel = getModel;
+exports.getData = getData;

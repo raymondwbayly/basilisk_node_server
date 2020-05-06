@@ -38,7 +38,7 @@ router.delete('/:uid', function(req, res) {
   res.send(responseObj.buildResponse(task.getCategory(), 'Delete is disabled on this version', service.remove(req.params.uid)));
 });
 
-/* PUT Update Active Flag. */
+/* GET Update Active Flag. */
 router.get('/active/:uid', function(req, res) {
   res.send(responseObj.buildResponse(task.getCategory(), ' Active Flag has been set ', service.active(req.params.uid)));
 });

@@ -9,8 +9,8 @@ const active = (record) => {
     return [];
 }
 
-const remove = (records, record) => {
-    return ['Disabled for now'];
+const remove = (records, id) => {
+    return 'Disabled for now';
 }
 
 const getNextID = (records) => {
@@ -52,6 +52,17 @@ const writeData = (records,path) => {
     return true;
 }
 
+const checkActive = (records,uid,path) => {
+    var ind = findRecordIndex(records, uid);
+    if(records[ind].active === 'true'){
+        records[ind].active = 'false';
+    } else {
+        records[ind].active = 'true';
+    }
+    writeData(records, path);
+    return true;
+}
+
 exports.active = active;
 exports.get = get;
 exports.remove = remove;
@@ -60,4 +71,5 @@ exports.findRecordIndex = findRecordIndex;
 exports.findRecordByID = findRecordByID;
 exports.setNextID = setNextID;
 exports.writeData = writeData;
+exports.checkActive = checkActive;
 exports.save = save;

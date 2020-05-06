@@ -46,13 +46,11 @@ const update = (record) => {
 }
 
 const remove = (uid) => {
-    var localData = core.getData();
-    return [];
+    return db.remove(core.getData(), uid);
 }
 
 const active = (uid) => {
-    var localData = core.getData();
-    return [];
+    return db.checkActive(core.getData(), uid, core.getPath());
 }
 
 
@@ -63,3 +61,4 @@ exports.search = search;
 exports.add = add;
 exports.update = update;
 exports.remove = remove;
+exports.active = active;

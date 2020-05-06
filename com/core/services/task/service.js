@@ -36,8 +36,13 @@ const add = (record) => {
 }
 
 const update = (record) => {
-    var localData = core.getData();
-    return [];
+    var records = core.getData();
+    var ind = db.findRecordIndex(records, record.id);
+    records[ind].name = record.name;
+    records[ind].description = record.description;
+    records[ind].active = record.active;
+    db.writeData(records, core.getPath());
+    return record;
 }
 
 const remove = (uid) => {

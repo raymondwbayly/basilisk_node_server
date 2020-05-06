@@ -59,4 +59,5 @@ exports.getNextID = getNextID;
 exports.findRecordIndex = findRecordIndex;
 exports.findRecordByID = findRecordByID;
 exports.setNextID = setNextID;
+exports.writeData = writeData;
 exports.save = save;

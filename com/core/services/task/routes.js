@@ -18,6 +18,11 @@ router.get('/:uid', function(req, res) {
   res.send(responseObj.buildResponse(task.getCategory(), 'Returns Record based on ID', service.get(req.params.uid)));
 });
 
+/* GET Search Record */
+router.get('/search/:uid', function(req, res) {
+  res.send(responseObj.buildResponse(task.getCategory(), 'Records Searched for ' + req.params.uid, service.search(req.params.uid)));
+});
+
 /* POST Create Record */
 router.post('/', function(req, res) {
   res.send(responseObj.buildResponse(task.getCategory(), 'Adds Task to the Server ', service.add(req.body)));

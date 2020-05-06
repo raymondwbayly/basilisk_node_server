@@ -6,31 +6,46 @@ var core = require('./index');
 
 
 const list = () => {
-    return core.getData();
+    let localData = core.getData();
+    return localData;
 }
 
 const get = (uid) => {
-    let ind =  core.getData().findIndex(x => x.id === uid);
-    return core.getData()[ind];
+    let localData = core.getData();
+    let ind =  localData.findIndex(x => x.id === uid);
+    return localData[ind];
 }
 
 const search = (value) => {
-    return [];
+    let localData = core.getData();
+    let searchResults = [];
+    for(let r of localData) {
+        if(r.name !== undefined){
+            if(r.name.toUpperCase() === value.toUpperCase() ) {
+                searchResults.push(r);
+            }
+        }
+    }
+    return searchResults;
 }
 
 const add = (task) => {
+    let localData = core.getData();
     return [];
 }
 
 const update = (task) => {
+    let localData = core.getData();
     return [];
 }
 
 const remove = (uid) => {
+    let localData = core.getData();
     return [];
 }
 
 const active = (uid) => {
+    let localData = core.getData();
     return [];
 }
 

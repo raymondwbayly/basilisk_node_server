@@ -1,24 +1,26 @@
 // This is the user service
+var path = require('path');
+var fs = require('fs');
+var lodash = require('lodash');
 
-var db = require('../../controllers/database.controller');
+var db = require('../../controllers/database');
 var Task = require('../../../../lib/core/models/Task');
 var core = require('./index');
 
 
 const list = () => {
-    let localData = core.getData();
+    var localData = core.getData();
     return localData;
 }
 
 const get = (uid) => {
-    let localData = core.getData();
-    let ind =  localData.findIndex(x => x.id === uid);
-    return localData[ind];
+    var localData = core.getData();
+    return db.get(localData, uid);
 }
 
 const search = (value) => {
-    let localData = core.getData();
-    let searchResults = [];
+    var localData = core.getData();
+    var searchResults = [];
     for(let r of localData) {
         if(r.name !== undefined){
             if(r.name.toUpperCase() === value.toUpperCase() ) {
@@ -29,23 +31,22 @@ const search = (value) => {
     return searchResults;
 }
 
-const add = (task) => {
-    let localData = core.getData();
-    return [];
+const add = (record) => {
+    return db.save(core.getData(), core.getPath(), record);
 }
 
-const update = (task) => {
-    let localData = core.getData();
+const update = (record) => {
+    var localData = core.getData();
     return [];
 }
 
 const remove = (uid) => {
-    let localData = core.getData();
+    var localData = core.getData();
     return [];
 }
 
 const active = (uid) => {
-    let localData = core.getData();
+    var localData = core.getData();
     return [];
 }
 

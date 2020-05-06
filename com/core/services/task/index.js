@@ -44,7 +44,10 @@ const getRoutes = () => {
     return routes;
 }
 
-
+const saveData = (records) => {
+    fs.writeFileSync(getPath(), JSON.stringify(records));
+    return true;
+}
 
 
 
@@ -56,3 +59,4 @@ exports.getRoutes = getRoutes;
 exports.getService = getService;
 exports.getModel = getModel;
 exports.getData = getData;
+exports.saveData = saveData;

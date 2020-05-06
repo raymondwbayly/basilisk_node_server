@@ -12,7 +12,26 @@ const settings = {
     path:path.join(__dirname, './', 'data.json'),
 };
 
-exports.settings = settings;
+const getTitle = () => {
+    return settings.title;
+}
+
+const getCategory = () => {
+    return settings.category;
+}
+
+const getURI = () => {
+    return settings.uri;
+}
+
+const getPath = () => {
+    return settings.path;
+}
+
+exports.getTitle = getTitle;
+exports.getCategory = getCategory;
+exports.getURI = getURI;
+exports.getPath = getPath;
 exports.routes = routes;
 exports.service = service;
 exports.model = model;

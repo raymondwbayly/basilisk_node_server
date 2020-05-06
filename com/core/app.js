@@ -58,7 +58,7 @@ app.use('/auth', auth.routes);
 app.use('/users', user.routes);
 app.use('/category', category.routes);
 app.use('/articles', articles.routes);
-app.use(task.settings.uri, task.routes);
+app.use(task.getURI(), task.routes);
 
 
 // ***********************************************************************

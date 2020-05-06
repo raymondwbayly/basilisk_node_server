@@ -55,7 +55,7 @@ app.use('/', indexview.routes);
 
 // Service Registration ----------------------
 app.use('/auth', auth.routes);
-app.use('/users', user.routes);
+app.use(user.getURI(), user.getRoutes());
 app.use('/category', category.routes);
 app.use('/articles', articles.routes);
 app.use(task.getURI(), task.getRoutes());

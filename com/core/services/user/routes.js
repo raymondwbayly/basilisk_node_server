@@ -20,7 +20,7 @@ router.get('/:uid', function(req, res) {
 
 /* GET Search Record */
 router.get('/search/:uid', function(req, res) {
-  res.send(responseObj.buildResponse(core.getCategory(), 'The ' + core.getTitle() + ' Searched for ' + req.params.uid, service.search(req.params.uid)));
+  res.send(responseObj.buildResponse(core.getCategory(), 'The' + core.getTitle() + ' Searched for ' + req.params.uid, service.search(req.params.uid)));
 });
 
 /* POST Create Record */
@@ -30,7 +30,7 @@ router.post('/', function(req, res) {
 
 /* PUT Update Record. */
 router.put('/', function(req, res) {
-  res.send(responseObj.buildResponse(core.getCategory(), core.getTitle() + '  ' + req.body.name  + ' Updated on the Server', service.update(req.body)));
+  res.send(responseObj.buildResponse(core.getCategory(), core.getTitle()  + ' ' + req.body.name  + ' Updated on the Server', service.update(req.body)));
 });
 
 /* DELETE Remove Record. */

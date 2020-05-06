@@ -4,7 +4,7 @@ var fs = require('fs');
 var lodash = require('lodash');
 
 var db = require('../../controllers/database');
-var Task = require('./model');
+var User = require('./model');
 var core = require('./index');
 
 

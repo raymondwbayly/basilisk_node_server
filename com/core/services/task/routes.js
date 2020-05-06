@@ -23,4 +23,19 @@ router.post('/', function(req, res) {
   res.send(responseObj.buildResponse(task.getCategory(), 'Adds Task to the Server ', service.add(req.body)));
 });
 
+/* PUT Update Record. */
+router.put('/', function(req, res) {
+  res.send(responseObj.buildResponse(task.getCategory(), 'Task ' + req.body.name  + ' Updated on the Server', service.update(req.body)));
+});
+
+/* DELETE Remove Record. */
+router.delete('/:uid', function(req, res) {
+  res.send(responseObj.buildResponse(task.getCategory(), 'Delete is disabled on this version', service.remove(req.params.uid)));
+});
+
+/* PUT Update Active Flag. */
+router.get('/active/:uid', function(req, res) {
+  res.send(responseObj.buildResponse(task.getCategory(), ' Active Flag has been set ', service.active(req.params.uid)));
+});
+
 module.exports = router;

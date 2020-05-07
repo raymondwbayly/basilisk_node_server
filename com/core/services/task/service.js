@@ -32,17 +32,20 @@ const search = (value) => {
 }
 
 const add = (record) => {
-    return db.save(core.getData(), core.getPath(), record);
+    var lr = db.confirmFields(record);
+    var nTask = new Task(lr.id,lr.name,lr.description,lr.active);
+    return db.save(core.getData(), core.getPath(), nTask.getJSON());
 }
 
 const update = (record) => {
+    var nTask = new Task(record.id,record.name,record.description,record.active);
     var records = core.getData();
-    var ind = db.findRecordIndex(records, record.id);
-    records[ind].name = record.name;
-    records[ind].description = record.description;
-    records[ind].active = record.active;
+    var ind = db.findRecordIndex(records, nTask.getID());
+    records[ind].name = nTask.getName();
+    records[ind].description = nTask.getDescription();
+    records[ind].active = nTask.getActive();
     db.writeData(records, core.getPath());
-    return record;
+    return nTask.getJSON();
 }
 
 const remove = (uid) => {

@@ -20,6 +20,8 @@ const getNextID = (records) => {
 }
 
 const get = (records, uid) => {
+    console.log('RECORDS', records);
+    console.log('UUID', uid);
     let ind =  records.findIndex(x => x.id === uid);
     return records[ind];
 }

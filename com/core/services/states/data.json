@@ -1,0 +1,361 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Alabama",
+      "abb": "Ala.",
+      "code": "AL",
+      "active": "true"
+    },
+    {
+      "id": "2",
+      "name": "Alaska",
+      "abb": "Alaska",
+      "code": "AK",
+      "active": "true"
+    },
+    {
+      "id": "3",
+      "name": "Arizona",
+      "abb": "Ariz.",
+      "code": "AZ",
+      "active": "true"
+    },
+    {
+      "id": "4",
+      "name": "Arkansas",
+      "abb": "Ark.",
+      "code": "AR",
+      "active": "true"
+    },
+    {
+      "id": "5",
+      "name": "California",
+      "abb": "Calif.",
+      "code": "CA",
+      "active": "true"
+    },
+    {
+      "id": "6",
+      "name": "Colorado",
+      "abb": "Colo.",
+      "code": "CO",
+      "active": "true"
+    },
+    {
+      "id": "7",
+      "name": "Connecticut",
+      "abb": "Conn.",
+      "code": "CT",
+      "active": "true"
+    },
+    {
+      "id": "8",
+      "name": "Delaware",
+      "abb": "Del.",
+      "code": "DE",
+      "active": "true"
+    },
+    {
+      "id": "9",
+      "name": "District of Columbia",
+      "abb": "D.C.",
+      "code": "DC",
+      "active": "true"
+    },
+    {
+      "id": "10",
+      "name": "Florida",
+      "abb": "Fla.",
+      "code": "FL",
+      "active": "true"
+    },
+    {
+      "id": "11",
+      "name": "Georgia",
+      "abb": "Ga.",
+      "code": "GA",
+      "active": "true"
+    },
+    {
+      "id": "12",
+      "name": "Hawaii",
+      "abb": "Hawaii",
+      "code": "HI",
+      "active": "true"
+    },
+    {
+      "id": "13",
+      "name": "Idaho",
+      "abb": "Idaho",
+      "code": "ID",
+      "active": "true"
+    },
+    {
+      "id": "14",
+      "name": "Illinois",
+      "abb": "Ill.",
+      "code": "IL",
+      "active": "true"
+    },
+    {
+      "id": "15",
+      "name": "Indiana",
+      "abb": "Ind.",
+      "code": "IN",
+      "active": "true"
+    },
+    {
+      "id": "16",
+      "name": "Iowa",
+      "abb": "Iowa",
+      "code": "IA",
+      "active": "true"
+    },
+    {
+      "id": "17",
+      "name": "Kansas",
+      "abb": "Kans.",
+      "code": "KS",
+      "active": "true"
+    },
+    {
+      "id": "18",
+      "name": "Kentucky",
+      "abb": "Ky.",
+      "code": "KY",
+      "active": "true"
+    },
+    {
+      "id": "19",
+      "name": "Louisiana",
+      "abb": "La.",
+      "code": "LA",
+      "active": "true"
+    },
+    {
+      "id": "20",
+      "name": "Maine",
+      "abb": "Maine",
+      "code": "ME",
+      "active": "true"
+    },
+    {
+      "id": "21",
+      "name": "Maryland",
+      "abb": "Md.",
+      "code": "MD",
+      "active": "true"
+    },
+    {
+      "id": "22",
+      "name": "Massachusetts",
+      "abb": "Mass.",
+      "code": "MA",
+      "active": "true"
+    },
+    {
+      "id": "23",
+      "name": "Michigan",
+      "abb": "Mich.",
+      "code": "MI",
+      "active": "true"
+    },
+    {
+      "id": "24",
+      "name": "Minnesota",
+      "abb": "Minn.",
+      "code": "MN",
+      "active": "true"
+    },
+    {
+      "id": "25",
+      "name": "Mississippi",
+      "abb": "Miss.",
+      "code": "MS",
+      "active": "true"
+    },
+    {
+      "id": "26",
+      "name": "Missouri",
+      "abb": "Mo.",
+      "code": "MO",
+      "active": "true"
+    },
+    {
+      "id": "27",
+      "name": "Montana",
+      "abb": "Mont.",
+      "code": "MT",
+      "active": "true"
+    },
+    {
+      "id": "28",
+      "name": "Nebraska",
+      "abb": "Nebr.",
+      "code": "NE",
+      "active": "true"
+    },
+    {
+      "id": "29",
+      "name": "Nevada",
+      "abb": "Nev.",
+      "code": "NV",
+      "active": "true"
+    },
+    {
+      "id": "30",
+      "name": "New Hampshire",
+      "abb": "N.H.",
+      "code": "NH",
+      "active": "true"
+    },
+    {
+      "id": "31",
+      "name": "New Jersey",
+      "abb": "N.J.",
+      "code": "NJ",
+      "active": "true"
+    },
+    {
+      "id": "32",
+      "name": "New Mexico",
+      "abb": "N.M.",
+      "code": "NM",
+      "active": "true"
+    },
+    {
+      "id": "33",
+      "name": "New York",
+      "abb": "N.Y.",
+      "code": "NY",
+      "active": "true"
+    },
+    {
+      "id": "34",
+      "name": "North Carolina",
+      "abb": "N.C.",
+      "code": "NC",
+      "active": "true"
+    },
+    {
+      "id": "35",
+      "name": "North Dakota",
+      "abb": "N.D.",
+      "code": "ND",
+      "active": "true"
+    },
+    {
+      "id": "36",
+      "name": "Ohio",
+      "abb": "Ohio",
+      "code": "OH",
+      "active": "true"
+    },
+    {
+      "id": "37",
+      "name": "Oklahoma",
+      "abb": "Okla.",
+      "code": "OK",
+      "active": "true"
+    },
+    {
+      "id": "38",
+      "name": "Oregon",
+      "abb": "Ore.",
+      "code": "OR",
+      "active": "true"
+    },
+    {
+      "id": "39",
+      "name": "Pennsylvania",
+      "abb": "Pa.",
+      "code": "PA",
+      "active": "true"
+    },
+    {
+      "id": "40",
+      "name": "Rhode Island",
+      "abb": "R.I.",
+      "code": "RI",
+      "active": "true"
+    },
+    {
+      "id": "41",
+      "name": "South Carolina",
+      "abb": "S.C.",
+      "code": "SC",
+      "active": "true"
+    },
+    {
+      "id": "42",
+      "name": "South Dakota",
+      "abb": "S.D.",
+      "code": "SD",
+      "active": "true"
+    },
+    {
+      "id": "43",
+      "name": "Tennessee",
+      "abb": "Tenn.",
+      "code": "TN",
+      "active": "true"
+    },
+    {
+      "id": "44",
+      "name": "Texas",
+      "abb": "Tex.",
+      "code": "TX",
+      "active": "true"
+    },
+    {
+      "id": "45",
+      "name": "Utah",
+      "abb": "Utah",
+      "code": "UT",
+      "active": "true"
+    },
+    {
+      "id": "46",
+      "name": "Vermont",
+      "abb": "Vt.",
+      "code": "VT",
+      "active": "true"
+    },
+    {
+      "id": "47",
+      "name": "Virginia",
+      "abb": "Va.",
+      "code": "VA",
+      "active": "true"
+    },
+    {
+      "id": "48",
+      "name": "Washington",
+      "abb": "Wash.",
+      "code": "WA",
+      "active": "true"
+    },
+    {
+      "id": "49",
+      "name": "West Virginia",
+      "abb": "W.Va.",
+      "code": "WV",
+      "active": "true"
+    },
+    {
+      "id": "50",
+      "name": "Wisconsin",
+      "abb": "Wis.",
+      "code": "WI",
+      "active": "true"
+    },
+    {
+      "id": "51",
+      "name": "Wyoming",
+      "abb": "Wyo.",
+      "code": "WY",
+      "active": "true"
+    }
+  ]
+}

@@ -493,22 +493,22 @@
 							"urlencoded": [
 								{
 									"key": "firstname",
-									"value": "Jason",
+									"value": "Verbal",
 									"type": "text"
 								},
 								{
 									"key": "lastname",
-									"value": "Vorheez",
+									"value": "Kint",
 									"type": "text"
 								},
 								{
 									"key": "email",
-									"value": "jvorheez@company.com",
+									"value": "vkint@company.com",
 									"type": "text"
 								},
 								{
 									"key": "password",
-									"value": "edferge98df9w",
+									"value": "Pwd@1234434",
 									"type": "text"
 								},
 								{
@@ -573,7 +573,7 @@
 								},
 								{
 									"key": "password",
-									"value": "dfgdg4598",
+									"value": "Pwd@123456",
 									"type": "text"
 								},
 								{
@@ -1315,6 +1315,54 @@
 				}
 			],
 			"description": "This is the task requests. ",
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "State Requests",
+			"item": [
+				{
+					"name": "List States",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/states",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"states"
+							]
+						},
+						"description": "Lists the States on the System"
+					},
+					"response": []
+				},
+				{
+					"name": "Get State",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/states/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"states",
+								"2"
+							]
+						},
+						"description": "Returns a state based on ID"
+					},
+					"response": []
+				}
+			],
+			"description": "This is the state requests",
 			"protocolProfileBehavior": {}
 		},
 		{

@@ -6,7 +6,7 @@ var core = require('./index');
 // TODO Add the Middle Ware Route Authorization to the user service
 
 
-var responseObj = require('../../controllers/response.controller');
+var responseObj = require('../../controllers/response');
 
 /* GET List Records */
 router.get('/', function(req, res) {

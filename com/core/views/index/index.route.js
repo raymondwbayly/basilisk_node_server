@@ -1,5 +1,5 @@
 var express = require('express');
-var cfgController = require('../../controllers/config.controller');
+var cfgController = require('../../controllers/config');
 
 var router = express.Router();
 

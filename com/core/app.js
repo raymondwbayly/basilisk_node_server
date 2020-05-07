@@ -19,7 +19,7 @@ var auth = require('./services/auth/index');
 var user = require('./services/user/index');
 var category = require('./services/categories/index');
 var articles = require('./services/articles/index');
-var tasks = require('./services/task/index');
+var task = require('./services/task/index');
 
 
 
@@ -55,10 +55,10 @@ app.use('/', indexview.routes);
 
 // Service Registration ----------------------
 app.use('/auth', auth.routes);
-app.use('/users', user.routes);
-app.use('/category', category.routes);
-app.use('/articles', articles.routes);
-app.use('/tasks', tasks.routes);
+app.use(user.getURI(), user.getRoutes());
+app.use(category.getURI(), category.getRoutes());
+app.use(articles.getURI(), articles.getRoutes());
+app.use(task.getURI(), task.getRoutes());
 
 
 // ***********************************************************************

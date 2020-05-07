@@ -498,12 +498,12 @@
 								},
 								{
 									"key": "lastname",
-									"value": "Vorheez",
+									"value": "McCartney",
 									"type": "text"
 								},
 								{
 									"key": "email",
-									"value": "jvorheez@company.com",
+									"value": "jmccartney@company.com",
 									"type": "text"
 								},
 								{
@@ -1315,6 +1315,54 @@
 				}
 			],
 			"description": "This is the task requests. ",
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "State Requests",
+			"item": [
+				{
+					"name": "List States",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/states",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"states"
+							]
+						},
+						"description": "Lists the States on the System"
+					},
+					"response": []
+				},
+				{
+					"name": "Get State",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/states/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"states",
+								"2"
+							]
+						},
+						"description": "Returns a state based on ID"
+					},
+					"response": []
+				}
+			],
+			"description": "This is the state requests",
 			"protocolProfileBehavior": {}
 		},
 		{

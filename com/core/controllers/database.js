@@ -52,6 +52,16 @@ const writeData = (records,path) => {
     return true;
 }
 
+const confirmFields = (record) => {
+    if(record.id === undefined){
+        record.id = '0';
+    }
+    if(record.active === undefined){
+        record.active = 'true';
+    }
+    return record;
+}
+
 const checkActive = (records,uid,path) => {
     var ind = findRecordIndex(records, uid);
     if(records[ind].active === 'true'){
@@ -73,3 +83,4 @@ exports.setNextID = setNextID;
 exports.writeData = writeData;
 exports.checkActive = checkActive;
 exports.save = save;
+exports.confirmFields = confirmFields;

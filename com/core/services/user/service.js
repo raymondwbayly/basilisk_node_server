@@ -22,8 +22,8 @@ const search = (value) => {
     var records = core.getData();
     var searchResults = [];
     for(let r of records) {
-        if(r.name !== undefined){
-            if(r.name.toUpperCase() === value.toUpperCase() ) {
+        if(r.lastname !== undefined){
+            if(r.lastname.toUpperCase() === value.toUpperCase() ) {
                 searchResults.push(r);
             }
         }
@@ -32,7 +32,9 @@ const search = (value) => {
 }
 
 const add = (record) => {
-    return db.save(core.getData(), core.getPath(), record);
+    var localRecord = db.confirmFields(record);
+    var nUser = new User(localRecord.id,localRecord.firstname, localRecord.lastname, localRecord.email, localRecord.password,localRecord.phone, localRecord.mobile,localRecord.profilepic, localRecord.active);
+    return db.save(core.getData(), core.getPath(), nUser.getJSON());
 }
 
 const update = (record) => {

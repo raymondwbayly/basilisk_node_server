@@ -57,7 +57,7 @@ app.use('/', indexview.routes);
 app.use('/auth', auth.routes);
 app.use(user.getURI(), user.getRoutes());
 app.use(category.getURI(), category.getRoutes());
-app.use('/articles', articles.routes);
+app.use(articles.getURI(), articles.getRoutes());
 app.use(task.getURI(), task.getRoutes());
 
 

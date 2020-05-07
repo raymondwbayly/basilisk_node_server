@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 var authService = require('./auth.service');
-var responseObj = require('../../controllers/response.controller');
+var responseObj = require('../../controllers/response');
 
 /* GET Auth listing. */
 router.get('/', function(req, res) {

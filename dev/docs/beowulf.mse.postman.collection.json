@@ -180,6 +180,244 @@
 			"protocolProfileBehavior": {}
 		},
 		{
+			"name": "Alert Requests",
+			"item": [
+				{
+					"name": "List Alerts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/alerts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"alerts"
+							]
+						},
+						"description": "This lists the alerts on the server. "
+					},
+					"response": []
+				},
+				{
+					"name": "Get Alert",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/alerts/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"alerts",
+								"3"
+							]
+						},
+						"description": "Getting a single alert by ID"
+					},
+					"response": []
+				},
+				{
+					"name": "Search Alerts (Name)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/alerts/search/Work on the SCRUM meeting schedule",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"alerts",
+								"search",
+								"Work on the SCRUM meeting schedule"
+							]
+						},
+						"description": "Search Alerts by Name"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Alert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Complete my bio",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "completing the bio online for a test of the new site",
+									"type": "text"
+								},
+								{
+									"key": "assigned",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "created",
+									"value": "03.01.2020",
+									"type": "text"
+								},
+								{
+									"key": "complete",
+									"value": "04.01.2020",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "new",
+									"type": "text"
+								},
+								{
+									"key": "active",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/alerts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"alerts"
+							]
+						},
+						"description": "Adds a new alert"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Alert",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Update the Cover Letter",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Updating the cover letter for the site project test",
+									"type": "text"
+								},
+								{
+									"key": "assigned",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "created",
+									"value": "03.01.2020",
+									"type": "text"
+								},
+								{
+									"key": "complete",
+									"value": "04.01.2020",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "new",
+									"type": "text"
+								},
+								{
+									"key": "active",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/alerts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"alerts"
+							]
+						},
+						"description": "Updates the alert on the system"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Alert",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/alerts/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"alerts",
+								"3"
+							]
+						},
+						"description": "Remove the Alert off of the system"
+					},
+					"response": []
+				},
+				{
+					"name": "Alert Active Flag",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/alerts/active/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"alerts",
+								"active",
+								"3"
+							]
+						},
+						"description": "Changes the status of Alert"
+					},
+					"response": []
+				}
+			],
+			"description": "This is the alert object. ",
+			"protocolProfileBehavior": {}
+		},
+		{
 			"name": "User Requests",
 			"item": [
 				{
@@ -203,12 +441,33 @@
 					"response": []
 				},
 				{
+					"name": "Get User by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"3"
+							]
+						},
+						"description": "Returns a User by ID"
+					},
+					"response": []
+				},
+				{
 					"name": "Search Users (LastName)",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/users/search/smith",
+							"raw": "http://localhost:3000/users/search/Smith",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -217,7 +476,7 @@
 							"path": [
 								"users",
 								"search",
-								"smith"
+								"Smith"
 							]
 						},
 						"description": "This searches the users by the last name passed"
@@ -234,42 +493,37 @@
 							"urlencoded": [
 								{
 									"key": "firstname",
-									"value": "Kirk",
+									"value": "Jason",
 									"type": "text"
 								},
 								{
 									"key": "lastname",
-									"value": "Smith",
+									"value": "Vorheez",
 									"type": "text"
 								},
 								{
 									"key": "email",
-									"value": "ksmith@company.com",
+									"value": "jvorheez@company.com",
 									"type": "text"
 								},
 								{
 									"key": "password",
-									"value": "rgergetgherg",
+									"value": "edferge98df9w",
 									"type": "text"
 								},
 								{
 									"key": "phone",
-									"value": "202-112-1212",
+									"value": "803-111-2222",
 									"type": "text"
 								},
 								{
 									"key": "mobile",
-									"value": "302-432-1234",
+									"value": "803-444-2345",
 									"type": "text"
 								},
 								{
 									"key": "profilepic",
 									"value": "https://github.com/raymondwbayly/beowulf-assets/blob/master/img/pub/user-profile.jpeg?raw=true",
-									"type": "text"
-								},
-								{
-									"key": "active",
-									"value": "true",
 									"type": "text"
 								}
 							]
@@ -426,6 +680,27 @@
 							]
 						},
 						"description": "This is the category listing"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Category by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/category/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"category",
+								"3"
+							]
+						},
+						"description": "Gets a single category by ID"
 					},
 					"response": []
 				},
@@ -603,6 +878,27 @@
 							]
 						},
 						"description": "This lists the articles on the server"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Article",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/articles/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"articles",
+								"3"
+							]
+						},
+						"description": "Returns the article based on ID"
 					},
 					"response": []
 				},

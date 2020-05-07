@@ -16,7 +16,7 @@ const remove = (records, id) => {
 const getNextID = (records) => {
     var tmpInd = records.length;
     tmpInd = tmpInd + 1;
-    return tmpInd;
+    return tmpInd.toString();
 }
 
 const get = (records, uid) => {
@@ -35,13 +35,13 @@ const findRecordByID = (records, uid) => {
 const setNextID = (records, record) => {
     var tmpInd = records.length;
     tmpInd = tmpInd + 1;
-    record.id = tmpInd;
+    record.id = tmpInd.toString();
     return record;
 }
 
 const save = (records, path, record) => {
     let tmpInd = getNextID(records);
-        record.id = tmpInd;
+        record.id = tmpInd.toString();
         records.push(record);
         writeData(records,path);
     return record;

@@ -16,6 +16,7 @@ var indexview = require('./views/index/index');
 
 // Services
 var auth = require('./services/auth/index');
+var alert = require('./services/alert/index');
 var user = require('./services/user/index');
 var category = require('./services/categories/index');
 var articles = require('./services/articles/index');
@@ -58,6 +59,7 @@ app.use('/auth', auth.routes);
 app.use(user.getURI(), user.getRoutes());
 app.use(category.getURI(), category.getRoutes());
 app.use(articles.getURI(), articles.getRoutes());
+app.use(alert.getURI(), alert.getRoutes());
 app.use(task.getURI(), task.getRoutes());
 
 

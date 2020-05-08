@@ -43,13 +43,13 @@
 									"urlencoded": [
 										{
 											"key": "user",
-											"value": "jdoe",
+											"value": "kkint@company.com",
 											"description": "This is the username",
 											"type": "text"
 										},
 										{
 											"key": "pass",
-											"value": "skippy",
+											"value": "Pwdrrd@12345",
 											"description": "User Pass",
 											"type": "text"
 										},

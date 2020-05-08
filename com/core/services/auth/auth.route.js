@@ -22,7 +22,7 @@ router.post('/user', function(req, res) {
   var user = req.body.user;
   var pass = req.body.pass;
   var token = req.body.token;
-  res.cookie('user-token', token).send(res.send(responseObj.buildResponse('Auth-User', 'User Cookie has been set for user ' + user, [])));
+  res.cookie('user-token', token).send(res.send(responseObj.buildResponse('Auth-User', 'User Cookie has been set for user ' + user, authService.getUser(user,pass))));
 });
 
 // Setting up the device authorization calls

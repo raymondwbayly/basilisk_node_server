@@ -33,6 +33,19 @@ const search = (value) => {
     return searchResults;
 }
 
+const getLoggedIn = (user,pass) => {
+    var records = core.getData();
+    var searchResults = [];
+    for(let r of records) {
+        if(r.email !== undefined){
+            if(r.email.toUpperCase() === user.toUpperCase() && r.password.toUpperCase() === pass.toUpperCase()  ) {
+                searchResults.push(r);
+            }
+        }
+    }
+    return searchResults;
+}
+
 const add = (record) => {
     var validateUser = new Validate();
         validateUser.setValid(true);
@@ -113,3 +126,4 @@ exports.add = add;
 exports.update = update;
 exports.remove = remove;
 exports.active = active;
+exports.getLoggedIn = getLoggedIn;

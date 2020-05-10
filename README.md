@@ -20,7 +20,7 @@ Beowulf is a NODEJS development server built using Microservices architecture to
 - ```npm install```
 - ```DEBUG=myapp:* npm start``` for mac
 - ```set DEBUG=myapp:* & npm start``` for windows.
-- Open a browser window and point it at ```http://localhost:3000/``` to view the server homepage
+- Open a browser window and point it at ```http://localhost:3100/``` to view the server homepage
 
 ---
 

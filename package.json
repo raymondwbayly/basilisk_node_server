@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./index",
-    "test": "DEBUG=BeowulfMSEServer:* node ./index"
+    "test": "DEBUG=BeowulfMSEServer:* node ./index",
+    "dev": "DEBUG=BeowulfMSEServer:* node ./index"
   },
   "dependencies": {
     "app-root-path": "^3.0.0",

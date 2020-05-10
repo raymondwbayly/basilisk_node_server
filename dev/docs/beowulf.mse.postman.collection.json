@@ -18,12 +18,12 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:3000/auth/user",
+									"raw": "http://localhost:3100/auth/user",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3100",
 									"path": [
 										"auth",
 										"user"
@@ -62,12 +62,12 @@
 									]
 								},
 								"url": {
-									"raw": "http://localhost:3000/auth/user",
+									"raw": "http://localhost:3100/auth/user",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
-									"port": "3000",
+									"port": "3100",
 									"path": [
 										"auth",
 										"user"
@@ -161,12 +161,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/auth",
+							"raw": "http://localhost:3100/auth",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"auth"
 							]
@@ -188,12 +188,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/alerts",
+							"raw": "http://localhost:3100/alerts",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"alerts"
 							]
@@ -208,12 +208,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/alerts/3",
+							"raw": "http://localhost:3100/alerts/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"alerts",
 								"3"
@@ -229,12 +229,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/alerts/search/Work on the SCRUM meeting schedule",
+							"raw": "http://localhost:3100/alerts/search/Work on the SCRUM meeting schedule",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"alerts",
 								"search",
@@ -291,12 +291,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:3000/alerts",
+							"raw": "http://localhost:3100/alerts",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"alerts"
 							]
@@ -356,12 +356,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:3000/alerts",
+							"raw": "http://localhost:3100/alerts",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"alerts"
 							]
@@ -376,12 +376,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/alerts/3",
+							"raw": "http://localhost:3100/alerts/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"alerts",
 								"3"
@@ -397,12 +397,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/alerts/active/3",
+							"raw": "http://localhost:3100/alerts/active/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"alerts",
 								"active",
@@ -426,12 +426,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/users",
+							"raw": "http://localhost:3100/users",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"users"
 							]
@@ -446,12 +446,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/users/3",
+							"raw": "http://localhost:3100/users/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"users",
 								"3"
@@ -467,12 +467,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/users/search/Smith",
+							"raw": "http://localhost:3100/users/search/Smith",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"users",
 								"search",
@@ -503,12 +503,12 @@
 								},
 								{
 									"key": "email",
-									"value": "kkint",
+									"value": "kkint@company.com",
 									"type": "text"
 								},
 								{
 									"key": "password",
-									"value": "pwd",
+									"value": "Pwdrrd@12345",
 									"type": "text"
 								},
 								{
@@ -529,12 +529,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:3000/users",
+							"raw": "http://localhost:3100/users",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"users"
 							]
@@ -599,12 +599,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:3000/users",
+							"raw": "http://localhost:3100/users",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"users"
 							]
@@ -619,12 +619,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/users/3",
+							"raw": "http://localhost:3100/users/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"users",
 								"3"
@@ -640,12 +640,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/users/active/3",
+							"raw": "http://localhost:3100/users/active/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"users",
 								"active",
@@ -669,12 +669,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/category",
+							"raw": "http://localhost:3100/category",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"category"
 							]
@@ -689,12 +689,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/category/3",
+							"raw": "http://localhost:3100/category/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"category",
 								"3"
@@ -710,12 +710,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/category/search/Financial News",
+							"raw": "http://localhost:3100/category/search/Financial News",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"category",
 								"search",
@@ -752,12 +752,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:3000/category",
+							"raw": "http://localhost:3100/category",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"category"
 							]
@@ -797,12 +797,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:3000/category",
+							"raw": "http://localhost:3100/category",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"category"
 							]
@@ -817,12 +817,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/category/3",
+							"raw": "http://localhost:3100/category/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"category",
 								"3"
@@ -838,12 +838,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/category/active/3",
+							"raw": "http://localhost:3100/category/active/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"category",
 								"active",
@@ -867,12 +867,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/articles",
+							"raw": "http://localhost:3100/articles",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"articles"
 							]
@@ -887,12 +887,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/articles/3",
+							"raw": "http://localhost:3100/articles/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"articles",
 								"3"
@@ -908,12 +908,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/articles/search/Company has great first quarter",
+							"raw": "http://localhost:3100/articles/search/Company has great first quarter",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"articles",
 								"search",
@@ -965,12 +965,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:3000/articles",
+							"raw": "http://localhost:3100/articles",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"articles"
 							]
@@ -1025,12 +1025,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:3000/articles",
+							"raw": "http://localhost:3100/articles",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"articles"
 							]
@@ -1045,12 +1045,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/articles/2",
+							"raw": "http://localhost:3100/articles/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"articles",
 								"2"
@@ -1066,12 +1066,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/articles/active/2",
+							"raw": "http://localhost:3100/articles/active/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"articles",
 								"active",
@@ -1123,12 +1123,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:3000/tasks",
+							"raw": "http://localhost:3100/tasks",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"tasks"
 							]
@@ -1143,12 +1143,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/tasks/search/Work on the Website",
+							"raw": "http://localhost:3100/tasks/search/Work on the Website",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"tasks",
 								"search",
@@ -1165,12 +1165,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/tasks/2",
+							"raw": "http://localhost:3100/tasks/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"tasks",
 								"2"
@@ -1211,12 +1211,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:3000/tasks",
+							"raw": "http://localhost:3100/tasks",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"tasks"
 							]
@@ -1256,12 +1256,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:3000/tasks",
+							"raw": "http://localhost:3100/tasks",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"tasks"
 							]
@@ -1276,12 +1276,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/tasks/2",
+							"raw": "http://localhost:3100/tasks/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"tasks",
 								"2"
@@ -1297,12 +1297,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/tasks/active/2",
+							"raw": "http://localhost:3100/tasks/active/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"tasks",
 								"active",
@@ -1326,12 +1326,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/states",
+							"raw": "http://localhost:3100/states",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"states"
 							]
@@ -1346,12 +1346,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/states/2",
+							"raw": "http://localhost:3100/states/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3100",
 							"path": [
 								"states",
 								"2"
@@ -1371,12 +1371,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/",
+					"raw": "http://localhost:3100/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000",
+					"port": "3100",
 					"path": [
 						""
 					]
